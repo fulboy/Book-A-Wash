@@ -1,0 +1,46 @@
+<!--
+  Generated template for the HomePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<p>Username: {{(userProfile | async)?.username}}</p>
+<p>First Name: {{(userProfile | async)?.firstname}}</p>
+<p>Last Name: {{(userProfile | async)?.lastname}}</p>
+<p>Car Make: {{(userProfile | async)?.car}}</p>
+<p>Registration Number: {{(userProfile | async)?.carRegNum}}</p>
+<p> Car: {{(car | async)?.city}}</p>
+----------------------------------
+<p>Username: {{carWashes}}</p>
+<p>First Name: {{(carWashes?.Address}}</p>
+<p>Last Name: {{(userProfile | async)?.lastname}}</p>
+<p>Car Make: {{(userProfile | async)?.car}}</p>
+<p>Registration Number: {{(userProfile | async)?.carRegNum}}</p>
+<p> Car: {{(car | async)?.city}}</p>
+
+<ion-list>
+    <button ion-item (click) = "ChooseTime()">        
+        <h2>Broaway Carwash</h2>
+    </button>
+    <button ion-item>  
+        <h2>Wash Express</h2>
+    </button>
+    <button ion-item>  
+        <h2>Carwasher</h2>
+    </button>
+    <button ion-item>  
+        <h2>Ionic Carwash</h2>
+    </button>
+</ion-list>
+
+</ion-content>
